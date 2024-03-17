@@ -17,7 +17,7 @@ const Signup = () => {
 
   const moonShinesignup = async () => {
     try {
-      const response = await axios.post('https://backend-3kng.onrender.com/signup', signup);
+      const response = await axios.post('https://backvitend.netlify.app',signup);
 
       if (response.status===200) {
       console.log("Signup successFul")
