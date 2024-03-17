@@ -15,16 +15,11 @@ const Signup = () => {
     }));
   };
 
-
-  const navigateBtn =()=>{
-
-  }
-
   const moonShinesignup = async () => {
     try {
-      const response = await axios.post('https://backend-3kng.onrender.com',signup);
-
-     
+      const response = await axios.post('https://backend-3kng.onrender.com/signup', signup);
+  
+      navigate('/'); // Navigate to home after successful signup
     } catch (err) {
       console.log("Error", err);
       // Handle errors appropriately (e.g., display error messages)
@@ -34,8 +29,11 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setSignup(''); // Clear signup form after submission (optional)
-    moonShinesignup();
+    if (Object.values(signup).some(field => field === '')) {
+      navigate("/signup");
+    } else {
+      moonShinesignup();
+    }
   };
 
   return (
@@ -51,7 +49,7 @@ const Signup = () => {
             <input type='email' placeholder='Enter email....' required={true} onChange={handleChange} name='email' autoComplete='email' />
             <label>Enter password</label>
             <input type='password' placeholder='Enter password....' required={true} onChange={handleChange} name='password' autoComplete="current-password" />
-            <input type='submit' value="Submit" className='submitBtn' onClick={navigateBtn}/>
+            <input type='submit' value="Submit" className='submitBtn'/>
           </form>
         </section>
       </div>
