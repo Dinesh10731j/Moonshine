@@ -15,15 +15,16 @@ const Signup = () => {
     }));
   };
 
+
+  const navigateBtn =()=>{
+
+  }
+
   const moonShinesignup = async () => {
     try {
       const response = await axios.post('https://backend-3kng.onrender.com',signup);
 
-      if (response.status===200) {
-      console.log("Signup successFul")
-      console.log(response.status)
-        navigate('/'); // Redirect to homepage using programmatic navigation
-      }
+     
     } catch (err) {
       console.log("Error", err);
       // Handle errors appropriately (e.g., display error messages)
@@ -50,7 +51,7 @@ const Signup = () => {
             <input type='email' placeholder='Enter email....' required={true} onChange={handleChange} name='email' autoComplete='email' />
             <label>Enter password</label>
             <input type='password' placeholder='Enter password....' required={true} onChange={handleChange} name='password' autoComplete="current-password" />
-            <input type='submit' value="Submit" className='submitBtn' />
+            <input type='submit' value="Submit" className='submitBtn' onClick={navigateBtn}/>
           </form>
         </section>
       </div>
