@@ -1,0 +1,163 @@
+.homepage{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top,black,#1dd1a1,black);
+}
+
+.header{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height:70px;
+    width:100%;
+    padding: 12px 10px;
+    
+}
+
+.moonshine img{
+    height:60px;
+    width:60px;
+}
+
+
+.list{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+.list li{
+    list-style: none;
+    padding:10px 20px;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+}
+
+.list li:hover{
+    background-color: #576574;
+    border-radius: 34px;
+    transition: all 0.3s;
+}
+.main{
+    padding:20px 12px;
+    display: flex;
+    flex-direction:row;
+    gap:50px,
+}
+.more{
+    display: flex;
+    flex-direction:row;
+    gap:40px;
+    margin-top: 20px;
+    
+}
+
+.NftIntro p{
+    color:#2c3e50;
+    font-weight: bold;
+    font-size:1.2em;
+}
+
+.more button{
+    padding: 10px 20px;
+    border-radius: 34px;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.30);
+    color: white;
+    font-size: 15px;
+    background-color:#2d3436;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid white;
+    font-weight: bold; 
+}
+.NftImages img{
+    height:400px;
+    width: 400px;
+    border-radius: 12px;
+    margin-left: 50px;
+    transform: rotateY(135deg);
+    filter: drop-shadow(10px 0px 12px grey);
+}
+
+.NftImages{
+    display: flex;
+    flex-direction:row;
+    gap:20px;
+}
+.moonshine_Logo h1{
+    color:grey;
+    margin-bottom: 24px;
+}
+.achievement h2{
+    color: white;
+}
+
+.achievement{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    margin-top: 20px;
+}
+
+.virtualAi h2{
+    color:#2c3e50;
+}
+
+.virtualAi p{
+    color: #ecf0f1;
+    text-align: justify;
+}
+
+.virtualMonkey p{
+    color: #ecf0f1;
+    text-align: justify;
+}
+
+.virtualMonkey h2{
+    color: #2c3e50;
+}
+
+.description{
+    height: 100px;
+    width: 500px;
+}
+
+.Signup button{
+    padding: 10px 20px;
+    border-radius: 34px;
+    color: white;
+    font-size: 15px;
+    background-color: transparent;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid white;
+    font-weight: bold;
+}
+.finest ,.cards,.market{
+    font-size:4em;
+}
+
+.finest{
+    background:linear-gradient(to bottom,white,lightblue);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.cards{
+    background:linear-gradient(to bottom,white,#0abde3);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+
+.market {
+    background:linear-gradient(to bottom,white,#48dbfb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}

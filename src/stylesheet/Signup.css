@@ -1,0 +1,55 @@
+form{
+    display: block;
+}
+
+.signupForm{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top,black,#1dd1a1,black);
+}
+.signupForm h1,p{
+    color: white;
+}
+
+.signupForm form{
+    height: auto;
+    width: auto;
+   
+    padding: 10px 50px;
+    box-shadow: 0px 15px 12px rgba(0, 0,0, 0.50);
+    border-radius: 7px;
+
+}
+
+.signupForm form label{
+    display: block;
+    margin:10px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.submitBtn{
+    display:block;
+    margin-top: 12px;
+   margin-left: 40px;
+   font-weight: bold;
+   cursor: pointer;
+}
+.signupForm form input{
+   padding: 12px 20px ;
+   border-radius:5px;
+   outline: none;
+   border: none;
+}
+
+.signupForm form input:hover{
+    border: 1px solid #a55eea;
+    transition: all 0.4s;
+}
+
+
