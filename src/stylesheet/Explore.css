@@ -1,0 +1,8 @@
+.explore{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top,black,#1dd1a1,black);
+}
