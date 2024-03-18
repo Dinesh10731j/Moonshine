@@ -18,8 +18,8 @@ const Signup = () => {
   const moonShinesignup = async () => {
     try {
       const response = await axios.post('https://backend-3kng.onrender.com/signup', signup);
-  
-      navigate('/'); // Navigate to home after successful signup
+      console.log(response.data);
+      navigate('/'); 
     } catch (err) {
       console.log("Error", err);
       // Handle errors appropriately (e.g., display error messages)
