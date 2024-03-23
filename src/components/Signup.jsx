@@ -29,11 +29,8 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (Object.values(signup).some(field => field === '')) {
-      navigate("/signup");
-    } else {
-      moonShinesignup();
-    }
+     moonShinesignup();
+    
   };
 
   return (
