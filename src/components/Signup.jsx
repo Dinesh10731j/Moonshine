@@ -4,7 +4,6 @@ import axios from "axios";
 import { useNavigate } from 'react-router-dom'; // Import for programmatic navigation
 
 const Signup = () => {
-  alert("Hello world")
   const [signup, setSignup] = useState({});
   const navigate = useNavigate();
 
